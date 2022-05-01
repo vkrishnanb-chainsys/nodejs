@@ -1,20 +1,13 @@
 // Load the fs (filesystem) module
 var fs = require('fs');
-
-// Read the contents of the file into memory.
-fs.readFile('phonebook.dat', function (err, contactData) 
-{
-  // If an error occurred, throwing it will
-  // display the exception and end our app.
-  if (err) throw err;
-  
+let contactData;
+try{
+  // Read the contents of the file into memory.
+  contactData = fs.readFileSync('phonebook.da','utf-8');
   // contactData is a Buffer, 
   //convert to string.
   var text = contactData.toString();
   // console.log(text);
-  
-  var results = {};
-
 // Break up the file into lines.
   var lines = text.split('\n');
   
@@ -24,5 +17,9 @@ lines.forEach(function(line) {
     var phone = parts[2];
     console.log(name+" - "+phone);
   });
-});
+} catch(ex)
+{
+  console.log(`ERROR!!!: ${ex}`);
+}
+console.log('Completed....');
 // node readFile.js
