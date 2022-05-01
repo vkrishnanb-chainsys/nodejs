@@ -1,0 +1,22 @@
+﻿extends layout
+
+block content
+  h1= "Welcome to Employee portal..." 
+  p 
+  span
+    a(href='/add') Add Employee
+  div
+  table
+    thead
+      tr: th(colspan="6") LIST OF EMPLOYEES
+    tbody
+        for res in result
+            tr
+            td #{res.EmpID}
+            td #{res.EmpName}
+            td #{res.Designation}
+            td #{res.DOJ}
+            td 
+                a(href='/edit?id=' + res.EmpID) Edit
+            td 
+                a(href='/delete?id=' + res.EmpID) Delete

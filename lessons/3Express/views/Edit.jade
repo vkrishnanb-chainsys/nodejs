@@ -1,0 +1,34 @@
+﻿extends layout
+
+block content
+  h1= "Welcome to Employee portal..." 
+  p 
+  div
+
+  form(name="frmEmp")
+      table
+        thead
+          tr: th(colspan="2") #{title}
+        tbody
+        for res in result
+            tr
+            td Employee ID
+            td 
+                input(type="text", name="EmpID" readonly value=res.EmpID)
+            tr
+            td Employee Name
+            td 
+                input(type="text", name="EmpName" required value=res.EmpName)
+            tr
+            td Designation
+            td 
+                input(type="text", name="Desig" required value=res.Designation)
+            tr
+            td Date of Join
+            td 
+                input(type="date", name="DOJ" required value=res.DOJ)
+            tr
+            td(colspan="2")
+                center
+                    input(type="submit", value="      Update      ")
+

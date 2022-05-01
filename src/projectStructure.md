@@ -1,9 +1,9 @@
 Project Structure
 ---
-url: 
-    1. https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/
-    1. https://blog.risingstack.com/node-js-project-structure-tutorial-node-js-at-scale/
-    1. https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/
+url:   
+    a. https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/  
+    b. https://blog.risingstack.com/node-js-project-structure-tutorial-node-js-at-scale/  
+    c. https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/  
     
  
 1. service layer: Structure the Node.js applications around ```product features / pages / components```.
