@@ -5,17 +5,20 @@ const readline = require('readline-promise').default;
 const rlp = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-  terminal: true
+  terminal: true,
 });
 
 let bar = null;
 
-rlp.questionAsync('Foo?').then(answer => {
+rlp.questionAsync('What is your name?').then((answer) => {
   bar = answer;
 
-  console.log(bar);
+  console.log('Welcome:' + bar);
 });
-/** readline/promise  */ 
+
+console.log('\n After');
+
+/** readline/promise  */
 // const answer = await rl.question('What do you think of Node.js? ');
 
 // console.log(`Thank you for your valuable feedback: ${answer}`);
