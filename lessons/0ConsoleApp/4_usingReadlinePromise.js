@@ -1,5 +1,5 @@
 // import * as readline from 'node:readline/promises'; //v 17.0
-
+// npm install --save readline-promise
 const readline = require('readline-promise').default;
 
 const rlp = readline.createInterface({
