@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 8000;
-app.get(':name', (request, response) => {
+app.get('/:name', (request, response) => {
   var data = request.params['name'];
   console.log(data);
   response.send('Hello from Express!');

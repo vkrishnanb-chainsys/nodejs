@@ -1,13 +1,13 @@
 const fs = require('fs');
 
-// STEP 1: Reading JSON file
+// STEP 1: Load JSON file
 const users = require('./users');
 
 // Defining new user
 let user = {
-  name: 'Raju',
+  name: 'Steve',
   age: 30,
-  language: ['Tamil', 'Hindi', 'English'],
+  language: ['French', 'Spanish', 'English'],
 };
 
 // STEP 2: Adding new data to users object

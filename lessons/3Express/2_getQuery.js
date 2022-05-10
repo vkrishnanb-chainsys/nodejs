@@ -15,6 +15,7 @@ app.listen(port, (err) => {
     return console.log('something bad happened', err);
   }
 
-  console.log(`server is listening on http://localhost:${port}`);
+  console.log(`server is listening on 
+  http://localhost:${port}/sample?name=Raj&city=Madurai&sal=234555`);
 });
-// http://localhost:8000/sample?name=raj
+// http://localhost:8000/sample?name=Raj

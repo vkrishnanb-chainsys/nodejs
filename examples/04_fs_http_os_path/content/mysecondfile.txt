@@ -1,0 +1,3 @@
+Open a File
+Syntax
+Following is the syntax of the method to open a file in asynchronous mode −
