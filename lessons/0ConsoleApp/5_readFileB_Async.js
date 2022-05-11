@@ -1,3 +1,4 @@
+// readFileAsync.js
 // Load the fs (filesystem) module
 var fs = require('fs');
 
@@ -18,23 +19,16 @@ fs.readFile('phonebook.dat', function (err, contactData) {
     console.log('ERROR!!! ${err}');
     return console.log(err); //throw err;
   }
-
-  // contactData is a Buffer,
-  //convert to string.
   var text = contactData.toString();
-  // console.log(text);
-
   let myfunc = function () {
     console.log('INSIDE readFILE');
   };
   setTimeout(myfunc, 3000);
-
-  // Break up the file into lines.
   var lines = text.split('\n');
   lines.forEach(function (line) {
-    var parts = line.split(' ');
+    var parts = line.split(',');
     var name = parts[0];
-    var phone = parts[2];
+    var phone = parts[1];
     console.log(name + ' - ' + phone);
   });
 });

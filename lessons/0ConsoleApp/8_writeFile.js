@@ -1,3 +1,4 @@
+// writeFile.js
 // Load the fs (filesystem) module
 var fs = require('fs');
 var content = 'Tom and Jerry are very good friends';

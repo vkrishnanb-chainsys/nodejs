@@ -1,3 +1,4 @@
+// writeJSON.js
 const fs = require('fs');
 
 // STEP 1: Load JSON file
@@ -16,7 +17,9 @@ users.push(user);
 // STEP 3: Writing to a file
 fs.writeFile('users.json', JSON.stringify(users), (err) => {
   // Checking for errors
-  if (err) throw err;
+  if (err) {
+    console.log(err);
+  }
 
   console.log('Done writing'); // Success
 });

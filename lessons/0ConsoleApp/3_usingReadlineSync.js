@@ -1,3 +1,4 @@
+// usingReadLineSync.js
 // npm install --save readline-sync
 var readlineSync = require('readline-sync');
 // Wait for user's response.

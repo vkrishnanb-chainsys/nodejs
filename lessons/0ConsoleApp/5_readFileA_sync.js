@@ -1,3 +1,4 @@
+// readFileSync.js
 // Load the fs (filesystem) module
 var fs = require('fs');
 let contactData;
