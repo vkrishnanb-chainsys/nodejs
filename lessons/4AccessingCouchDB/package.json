@@ -1,0 +1,19 @@
+{
+  "name": "4AccessingCouchDB",
+  "version": "1.0.0",
+  "description": "Interacting with a `CouchDB` server from a Node process.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nano": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

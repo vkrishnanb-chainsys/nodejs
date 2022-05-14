@@ -25,3 +25,4 @@ app.listen(port, (err) => {
 
   console.log(`server is listening on http://localhost:${port}`);
 });
+// npx nodemon 4_params.js

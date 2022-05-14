@@ -15,3 +15,5 @@ app.listen(port, (err) => {
 });
 
 // localhost:8000/Raj
+
+// npx nodemon 4_params.js
